@@ -1,0 +1,26 @@
+body {
+	width: 85vw;
+	margin: auto;
+}
+
+.column {
+	padding: 40px;
+}
+
+/* button a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+} */
+
+button a {
+	color: white;
+  }
+button {
+	border-radius: 50px !important;
+}
+
+.hashtag {
+	border: solid black;
+	border-radius: 25px;
+}
