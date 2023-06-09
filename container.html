@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .left-column {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .right-column {
+            display: grid;
+        }
+
+        .project {
+            background-color: lightgray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .long-project {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="left-column">
+            <div class="project">
+                <!--Story 1 -->
+                <div class="work-sample">
+                  <div class="piece">
+                    <div>
+                      <a href="https://ivynyayieka.github.io/nairobi_sunshine/" target="_blank">
+                        <img src="nairobi_sunshine_recording.gif" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
+
+                        
+                        <p class="piece-title">Nairobi Sunshine</p>
+                      </a>
+                      <p class="piece-desc">
+                        <p><em>Scraped data on daily temperature, daily sunshine duration and daily shadow lengths to write a satirical data journalism piece about why Nairobi receives the best sunshine</em></p>      </p>
+                      <span class="tool python">#Python </button>
+                      <span class="tool R"> R/ggplot</span>
+                      <span class="tool datawrapper">#Datawrapper</button>
+                      <span class="tool Illustrator">#Adobe Illustrator</button>
+                    </div>
+                  </div>
+            </div>
+
+
+
+            <div class="project">
+                <!--Story 5-->
+                <div class="piece">
+                  <div>
+                    <a href="https://ivynyayieka.github.io/banned_books/" target="_blank">
+                      <img src="banned_books_screenshot.png" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
+                      <p class="piece-title">Banned Books</p>
+                    </a>
+                    <p class="piece-desc">
+                      <em>I collected historical data on banning of books globally, categorised them and made plots on Python and R/ggplot which I transformed in Adobe Illustrator. I also zoomed in on banning in the United States</em>
+                    </p>
+                  <span class="tool Illustrator">Adobe Illustrator</span>
+                  <span class="tool Twine">Twine</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="long-project">
+                  <!--Story 2-->
+                  <div class="piece">
+                    <div>
+                    <a href="https://rentwirenyc.substack.com/p/water-woes-in-the-bronx" target="_blank">
+                      <img src="bronx-community-districts-tend-to-have-higher-rates-of-water-complaints.png" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
+
+                      <p class="piece-title">Water Woes in the Bronx</p>
+                    </a>
+                    <p class="piece-desc">
+                      <!-- <em>I explored NYC data and found it bizarre that water problems featured prominently. I spoke to experts and residents, ran data analysis, made visualizations, wrote the story and published the story on Rentwire.</em>  -->
+                      </p>
+                    <span class="tool python">#Python </button>
+                    <span class="tool datawrapper">#Datawrapper</button>
+                    <span class="tool mapping">#Mapping</button>
+                    <span class="tool Illustrator">#Excel</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
