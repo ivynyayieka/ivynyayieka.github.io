@@ -189,6 +189,7 @@
       margin-bottom: 4px;
     }
 
+    
     .tool {
       font-family: 'Cormorant Garamond', serif;
       font-size: 11px;
@@ -374,9 +375,7 @@
   }
 
 
-.full-column {
-  display: grid;
-}
+
 
 .piece {
   background-color: lightgray;
@@ -387,6 +386,11 @@
 .piece-image {
   width: 100%;
 }
+
+/* .piece-image-two {
+  width: 100%;
+  height:60%;
+} */
 
 /* Rest of your existing CSS styles */
 
@@ -416,11 +420,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     grid-gap: 20px;
     margin-left: 5%;
     margin-right: 5%;
-    /* height: 300px; Adjust the height as per your requirements */
+    /* height: 150px; Adjust the height as per your requirements */
+    gap: 0; /* Add this line to remove the space between columns */
+
 
 }
 
@@ -450,15 +456,11 @@
     margin-right: auto%;
   }
 
-  .left-story {
-    background-color: lightgray;
-    padding: 20px;
+
+  .full-column .piece-desc-not-underlined .piece-desc p a {
+    text-decoration: none; /* Remove underline from all <p> tags within piece-desc */
   }
 
-  .right-story {
-    background-color: lightgray;
-    padding: 20px;
-  }
 
   /* Media query for narrow widths */
   @media (max-width: 768px) {
@@ -479,7 +481,6 @@
   }
 </style>
 
-</style>
 
 
 
@@ -735,31 +736,68 @@
 
 <!--  to bring in graffiti story -->
 
-<!--  new row -->
+<style>
+  .full-column {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .column-left {
+    flex: 2;
+  }
+
+  .column-right {
+    flex: 1;
+  }
+
+</style>
+
+<!--  to bring in graffiti story -->
 <!-- <div class="grid-container"> -->
   <div class="full-column">
-    <!-- Content for the full-width column -->
-    <!--Story 4-->
-    <div class="piece">
-      <div>
-        <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank">
-          <img src="artist_graffiti.jpg" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
-          <p class="piece-title">NYC parks are battling graffiti's comeback after the pandemic</p>
-        </a>
-        <p class="piece-desc">
-          <em>"In Riverside Park, spring is an almost season. Yellow and white flowers are almost blooming. The cherry blossoms are almost pink, the sun is almost egg-yolk yellow. All the colors nature offers almost make up for the art that was lost when Amtrak painted over historic graffiti in the park’s Freedom Tunnel..." For this project, I used Python and R to collect and analyse data related to graffiti in NYC and spoke to residents and cleaners to understand graffiti attitudes within the city.</em>
-        </p>
-        <span class="tool python">Python</span>
-        <span class="tool R"> R/ggplot</span>
-        <span class="tool Illustrator">Adobe Illustrator</span>
-        <span class="tool regex">Photography</span>
-        <span class="tool datawrapper">#Datawrapper</span>
-        <span class="tool web-scraping">#Flourish</span>
-        <span class="tool htmlcss">#HTML/CSS</span>
-      </div>
+    <div class="column-left">
+      <!-- Left column for the image -->
+      <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank">
+        <img src="artist_graffiti.jpg" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
+      </a>
+    </div>
+    <div class="column-right">
+      <!-- Right column for the text -->
+      <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank">
+        <div class="piece">
+          <div>
+            <p class="piece-title">NYC parks are battling graffiti's comeback after the pandemic</p>
+          </div>
+          <div class="piece-desc-not-underlined">
+            <div class="piece-desc">
+              <p style="text-decoration: none;">
+                In Riverside Park, spring is an almost season. Yellow and white flowers are almost blooming. The cherry blossoms are almost pink, the sun is almost egg-yolk yellow. All the colors nature offers almost make up for the art that was lost when Amtrak painted over historic graffiti in the park’s Freedom Tunnel. But if the illegal graffiti scrawled at 125th STREET, and at the tennis court and at the tunnel at 96th STREET is anything to go by, the city’s thirst for art has not been quenched. Cyclists and pedestrians almost collide. A maybe 60-year-old man in clear spectacles almost runs around the park, which almost offers peace, save for the cars and the motorbikes revving from the roads that sandwich the park.
+              </p>
+              <p>
+                Instead, if you, like the 107,268 viewers confiding in wikihow on the matter, are trying to satisfy your desire for any lasting graffiti at Riverside Park’s Freedom Tunnel, worry not. The wikiHow page promises that it is “very easy to access.” You will, however, need to, among other things, “slip through the gap between the fence and the overpass,” “find yourself fenced into a sort of pen” and “Simply hop this fence using one of the overpass pillars.”
+              </p>
+              <p>
+                If you make it into Freedom Tunnel, so named after the graffiti artist who popularised it, then you could be arrested for trespassing. Easy enough.
+              </p>
+              <p><em>
+                For this project, I used Python and R to collect and analyze data related to graffiti in NYC and spoke to residents and cleaners to understand graffiti attitudes within the city.
+              </em></p>
+            </div>
+          </div>
+          <span class="tool python">Python</span>
+          <span class="tool R">R/ggplot</span>
+          <span class="tool Illustrator">Adobe Illustrator</span>
+          <span class="tool regex">Photography</span>
+          <span class="tool datawrapper">#Datawrapper</span>
+          <span class="tool web-scraping">#Flourish</span>
+          <span class="tool htmlcss">#HTML/CSS</span>
+        </div>
+      </a>
     </div>
   </div>
 <!-- </div> -->
+
 
 
 
