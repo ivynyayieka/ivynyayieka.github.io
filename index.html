@@ -373,6 +373,23 @@
     margin-right: 5%;
   }
 
+
+.full-column {
+  display: grid;
+}
+
+.piece {
+  background-color: lightgray;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.piece-image {
+  width: 100%;
+}
+
+/* Rest of your existing CSS styles */
+
   .left-column {
     display: grid;
   }
@@ -395,6 +412,18 @@
   .piece-image {
     width: 100%;
   }
+  .full-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    /* margin-bottom: 20px; */
+    grid-gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* height: 300px; Adjust the height as per your requirements */
+
+}
+
   .section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -635,7 +664,7 @@
       </a>
       <p class="piece-desc">
         <!-- <p>Columbia Journalism School project</p> -->
-        <em>For this project, I scraped TikTok and analysed all the videos in the why are you lying challenge, creating a database with necessary columns such as video links, creators, number of likes etc. Through the challenge trend on tiktok, hundreds of young Kenyans talked about mistreatment in their high schools. I then further categorised the videos one by one, spoke to affected alumni and experts and wrote the story whose publication is upcoming at Columbia News Service.</em>
+        <em>For this project, I scraped TikTok and analysed all the videos in the why are you lying challenge, creating a database with necessary columns such as video links, creators, number of likes etc. Through the challenge trend on tiktok, hundreds of young Kenyans talked about mistreatment in their high schools. I then further categorised the videos one by one, spoke to affected alumni and experts and wrote the story whose publication is upcoming.</em>
       </p>
       <span class="tool python">Python</span>
       <span class="tool excel"> Excel</span>
@@ -704,7 +733,37 @@
 </div>
 </div>
 
-  
+<!--  to bring in graffiti story -->
+
+<!--  new row -->
+<!-- <div class="grid-container"> -->
+  <div class="full-column">
+    <!-- Content for the full-width column -->
+    <!--Story 4-->
+    <div class="piece">
+      <div>
+        <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank">
+          <img src="artist_graffiti.jpg" style="max-height:100%; max-width:100%; margin-bottom: 0;" class="hvr-grow shadow">
+          <p class="piece-title">NYC parks are battling graffiti's comeback after the pandemic</p>
+        </a>
+        <p class="piece-desc">
+          <em>"In Riverside Park, spring is an almost season. Yellow and white flowers are almost blooming. The cherry blossoms are almost pink, the sun is almost egg-yolk yellow. All the colors nature offers almost make up for the art that was lost when Amtrak painted over historic graffiti in the park’s Freedom Tunnel..." For this project, I used Python and R to collect and analyse data related to graffiti in NYC and spoke to residents and cleaners to understand graffiti attitudes within the city.</em>
+        </p>
+        <span class="tool python">Python</span>
+        <span class="tool R"> R/ggplot</span>
+        <span class="tool Illustrator">Adobe Illustrator</span>
+        <span class="tool regex">Photography</span>
+        <span class="tool datawrapper">#Datawrapper</span>
+        <span class="tool web-scraping">#Flourish</span>
+        <span class="tool htmlcss">#HTML/CSS</span>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+
+
+
+
   <!--Work samples-->
   <div class="category">
     <p>News Stories</p>
