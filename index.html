@@ -348,6 +348,8 @@
     a {
       color: rgb(7, 7, 7);
       background-color: transparent;
+      /* text-decoration: none; */
+
     }
 
     a:hover {
@@ -457,11 +459,13 @@
   }
 
 
-  .full-column .piece-desc-not-underlined .piece-desc p a {
-    text-decoration: none; /* Remove underline from all <p> tags within piece-desc */
+  .full-column .piece-desc a {
+    text-decoration: none !important;
   }
 
-
+  .full-column .piece-desc-not-underlined .piece-desc a{
+    text-decoration: none !important;
+  }  
   /* Media query for narrow widths */
   @media (max-width: 768px) {
     .grid-container {
@@ -751,6 +755,13 @@
     flex: 1;
   }
 
+  .full-column .piece-desc a {
+    text-decoration: none !important;
+  }
+
+  .full-column .piece-desc-not-underlined .piece-desc a{
+    text-decoration: none !important;
+  }  
 </style>
 
 <!--  to bring in graffiti story -->
@@ -764,23 +775,24 @@
     </div>
     <div class="column-right">
       <!-- Right column for the text -->
-      <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank">
+      <a href="https://ivynyayieka.github.io/graffiti_nyc/" target="_blank" style="text-decoration: none;">
         <div class="piece">
           <div>
-            <p class="piece-title">NYC parks are battling graffiti's comeback after the pandemic</p>
+            <p class="piece-title" style="text-decoration: underline;">NYC parks are battling graffiti's comeback after the pandemic</p>
           </div>
           <div class="piece-desc-not-underlined">
             <div class="piece-desc">
               <p style="text-decoration: none;">
                 In Riverside Park, spring is an almost season. Yellow and white flowers are almost blooming. The cherry blossoms are almost pink, the sun is almost egg-yolk yellow. All the colors nature offers almost make up for the art that was lost when Amtrak painted over historic graffiti in the park’s Freedom Tunnel. But if the illegal graffiti scrawled at 125th STREET, and at the tennis court and at the tunnel at 96th STREET is anything to go by, the city’s thirst for art has not been quenched. Cyclists and pedestrians almost collide. A maybe 60-year-old man in clear spectacles almost runs around the park, which almost offers peace, save for the cars and the motorbikes revving from the roads that sandwich the park.
               </p>
-              <p>
+              <p style="text-decoration: none;">
                 Instead, if you, like the 107,268 viewers confiding in wikihow on the matter, are trying to satisfy your desire for any lasting graffiti at Riverside Park’s Freedom Tunnel, worry not. The wikiHow page promises that it is “very easy to access.” You will, however, need to, among other things, “slip through the gap between the fence and the overpass,” “find yourself fenced into a sort of pen” and “Simply hop this fence using one of the overpass pillars.”
               </p>
-              <p>
+              <p style="text-decoration: none;">
                 If you make it into Freedom Tunnel, so named after the graffiti artist who popularised it, then you could be arrested for trespassing. Easy enough.
               </p>
-              <p><em>
+              <p style="text-decoration: none;">
+                <em>
                 For this project, I used Python and R to collect and analyze data related to graffiti in NYC and spoke to residents and cleaners to understand graffiti attitudes within the city.
               </em></p>
             </div>
